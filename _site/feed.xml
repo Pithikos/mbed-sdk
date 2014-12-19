@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Documentation</title>
+    <description>Documentation for the Mbed SDK
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Dec 2014 17:12:52 +0000</pubDate>
-    <lastBuildDate>Thu, 18 Dec 2014 17:12:52 +0000</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 19 Dec 2014 17:42:52 +0000</pubDate>
+    <lastBuildDate>Fri, 19 Dec 2014 17:42:52 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
+        <title>test3</title>
+        <description>&lt;p&gt;Python code:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+def test():
+	print('test')
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def test():
+    print('test')
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 18 Dec 2014 17:10:14 +0000</pubDate>
+        <link>/jekyll/update/2014/12/18/test3.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/12/18/test3.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>test2</title>
+        <description>&lt;p&gt;Ytess&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Dec 2014 17:10:14 +0000</pubDate>
+        <link>/jekyll/update/2014/12/18/test2.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/12/18/test2.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 18 Dec 2014 17:10:14 +0000</pubDate>
+        <link>/jekyll/update/2014/12/18/test.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/12/18/test.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>How to use</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
@@ -28,8 +91,8 @@
 
 </description>
         <pubDate>Thu, 18 Dec 2014 17:10:14 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2014/12/18/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/12/18/welcome-to-jekyll.html</guid>
+        <link>/jekyll/update/2014/12/18/How_to_use.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/12/18/How_to_use.html</guid>
         
         
         <category>jekyll</category>

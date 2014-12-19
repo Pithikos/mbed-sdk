@@ -6,23 +6,11 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
   
-<script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
-
-<script>
-script = document.createElement("script");
-script.type = "text/javascript";
-//script.src = "http://ip.jsontest.com/";
-script.src = "https://raw.githubusercontent.com/mbedmicro/mbed/master/libraries/mbed/api/AnalogIn.h";
-document.body.appendChild(script)
-</script>
 
 
 <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>

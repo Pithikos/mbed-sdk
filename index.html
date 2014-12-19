@@ -12,10 +12,9 @@ layout: default
 <script>
 function loadXMLDoc()
 {
-	$("button").click(function(){
-	  $.get("demo_test.asp",function(data,status){
+	console.log("clicked")
+	$.get("https://mbed.org",function(data,status){
 	    alert("Data: " + data + "\nStatus: " + status);
-	  });
 	});
 }
 </script>

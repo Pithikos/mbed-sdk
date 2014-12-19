@@ -13,9 +13,13 @@ layout: default
 function loadXMLDoc()
 {
 	console.log("clicked")
-	$.get("https://mbed.org",function(data,status){
+	$.get("https://raw.githubusercontent.com/mbedmicro/mbed/master/README.md",function(data,status){
 	    alert("Data: " + data + "\nStatus: " + status);
 	});
+	$.get("https://github.com/mbedmicro/mbed/blob/master/README.md",function(data,status){
+	    alert("Data: " + data + "\nStatus: " + status);
+	});
+	
 }
 </script>
 

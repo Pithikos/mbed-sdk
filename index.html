@@ -10,20 +10,12 @@ layout: default
         type="text/javascript"></script>
 
 <script>
-function loadXMLDoc()
-{
-	console.log("clicked")
-	$.get("https://raw.githubusercontent.com/mbedmicro/mbed/master/README.md",function(data,status){
-	    alert("Data: " + data + "\nStatus: " + status);
-	});
-	$.get("https://github.com/mbedmicro/mbed/blob/master/README.md",function(data,status){
-	    alert("Data: " + data + "\nStatus: " + status);
-	});
-	
-}
+script = document.createElement("script");
+script.type = "text/javascript";
+//script.src = "http://ip.jsontest.com/";
+script.src = "https://raw.githubusercontent.com/mbedmicro/mbed/master/libraries/mbed/api/AnalogIn.h";
+document.body.appendChild(script)
 </script>
-
-<button type="button" onclick="loadXMLDoc()">Change Content</button>  
 
 
 <ul class="post-list">

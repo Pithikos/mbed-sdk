@@ -4,22 +4,30 @@ title:  "How to use"
 date:   2014-12-18 17:10:14
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+This is a simple Jekyll template that can be used as a starting point for Documentation of your project.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Adding content
+To add a new page you simply click on Add from wherever you might be. All pages can be 
+found inside the folder `_posts`.
 
-Jekyll also offers powerful support for code snippets:
+As you might notice all content is markdown syntax. Also allowed is `liquid syntax` in 
+case you want to access [Jekyll's variables]().
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+Also you can use `liquid syntax` to highlight code.
+For example:
+{% highlight python %}
+def test(name):
+  print('test')
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+## Editing
+Pressing on `edit` (on the right upper corner) will simply take you to Github's editor 
+for the specific page where you are now.
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+## Adding collaborators
+Editing pages is the same as editing source code of a project on Github. For that reason
+whenever a random user clicks on Edit, a message to fork the project will be given. If the
+user forks the project, then he can pull a request to merge.
+
+If you want specific users to be able and freely edit content without this process,
+then you simply have to add these users as collaborators to the project.

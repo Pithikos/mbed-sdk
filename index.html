@@ -5,8 +5,25 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
-  <script>alert("this is a test")</script>
-  <ul class="post-list">
+  
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+<script>
+function loadXMLDoc()
+{
+	$("button").click(function(){
+	  $.get("demo_test.asp",function(data,status){
+	    alert("Data: " + data + "\nStatus: " + status);
+	  });
+	});
+}
+</script>
+
+<button type="button" onclick="loadXMLDoc()">Change Content</button>  
+
+
+<ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>

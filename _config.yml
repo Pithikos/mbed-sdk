@@ -3,7 +3,7 @@ title: Documentation
 email: manossef@gmail.com
 description: >
   Documentation for the Mbed SDK
-baseurl:  "mbed-sdk"
+baseurl:  ""
 project-name:  "Mbed SDK"
 github_username:  Pithikos
 

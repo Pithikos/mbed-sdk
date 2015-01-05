@@ -1,31 +1,21 @@
----
-layout: post
-title:  "How to use"
-date:   2014-12-18 17:10:14
-categories: jekyll update
----
+# How to use
 
-This is a simple Jekyll template that makes it easy to use Jekyll on
-Github pages as a documentation platform resembling wiki but with more
-control.
 
-  * Uses Github's online editor to edit pages
-  * Uses Github's revision control for the pages
-  * Let's users to fork, do changes and make pull requests
-  * You can use Github's settings to easily determine who has admin access
+You only need to configure your `_config.yml` file so it reflects your
+project.
 
-You can use everything a normal !(Jekyll)[http://jekyllrb.com/docs/home] project can.
+The below fields have to be correct for this template to work:
 
-## Adding content
-All pages have an `Add` button. Clicking that you will be able to add a new
-page to the current structure. If you don't have permissions to do so then
-the project can be forked and once you added the content you can make a pull
-request.
+  1. `github_project-name`
+  2. `github_username`
 
-## Editing
-Pressing on `Edit` on a page will simply take you to Github's editor 
-for the specific page where you are now. As with `Add`, if you don't
-have permissions to do so (you are not an admin of the project), 
+
+## Content
+All content is saved in _posts. The content there can be organized with
+folders. Markdown files that are in the same folder are treated as belonging
+to the same documentation snippet and accordingly the navigation panel
+will be populated.
+
 
 ## Adding collaborators
 Editing pages is the same as editing source code of a project on Github. For that reason
@@ -34,3 +24,8 @@ user forks the project, then he can pull a request to merge.
 
 If you want specific users to be able and freely edit content without this process,
 then you simply have to add these users as collaborators to the project.
+
+
+## What's next?
+You can start by going to the [root]({{  }}) and start adding content. You can safely
+delete this file.

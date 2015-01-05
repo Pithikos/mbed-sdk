@@ -3,7 +3,7 @@ title: Documentation
 email: manossef@gmail.com
 description: >
   Documentation for the Mbed SDK
-baseurl:  ""
+baseurl:  "./"
 
 project-name:  "Mbed SDK"         # The name of the project as shown on pages
 github_project-name:  "mbed-sdk"

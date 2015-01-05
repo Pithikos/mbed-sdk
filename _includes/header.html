@@ -4,6 +4,7 @@
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
+
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -13,11 +14,25 @@
         </svg>
       </a>
 
-      <!-- Add a new page -->
-      <a href="https://github.com/{{ site.github_username }}/{{ site.baseurl }}/new/master/{{ page.path }}">Add</a>
+
+    <script type="text/javascript">
+
+		function today () {;
+	        var today = new Date();
+	        var day = today.getDate();
+	        var month = today.getMonth() + 1;
+	        var year = today.getFullYear();
+	        return year + "-" + ("0" + month).slice(-2) + "-" + ("0" + day).slice(-2);
+		}
+
+    </script>
+
+
+      <!-- Add a new page --> <!-- {{ site.time | date: '%Y-%m-%d' }}- https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts-->
+      <a href="javascript:window.location.href = 'https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts?filename=' + today() + '-';">Add</a>
 
       <!-- Edit page -->
-      <a href="https://github.com/{{ site.github_username }}/{{ site.baseurl }}/edit/gh-pages/{{ page.path }}">Edit</a>
+      <a href="https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/edit/gh-pages/{{ page.path }}">Edit</a>
 
 
     </nav>

@@ -17,20 +17,26 @@
 
     <script type="text/javascript">
 
-		function today () {;
+		function today () {
 	        var today = new Date();
 	        var day = today.getDate();
 	        var month = today.getMonth() + 1;
 	        var year = today.getFullYear();
 	        return year + "-" + ("0" + month).slice(-2) + "-" + ("0" + day).slice(-2);
 		}
+		
+		function replace_date_with_today(str){
+			datere=/20[0-9]{2}-[0-9]{2}-[0-9]{2}/g;
+			return str.replace(datere, today());
+		}
 
     </script>
 
 
-      <!-- Add a new page --> <!-- {{ site.time | date: '%Y-%m-%d' }}- https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts-->
-      <a href="javascript:window.location.href = 'https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts?filename=' + today() + '-';">Add</a>
-
+      <!-- Add a new page -->
+      <a
+      href="https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts?filename={{ site.time | date: '%Y-%m-%d' }}-"
+      onclick="window.location.href = replace_date_with_today(this.href); return false;">Add</a>
       <!-- Edit page -->
       <a href="https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/edit/gh-pages/{{ page.path }}">Edit</a>
 

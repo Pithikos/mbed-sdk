@@ -4,25 +4,28 @@ title:  "How to use"
 date:   2014-12-18 17:10:14
 categories: jekyll update
 ---
-This is a simple Jekyll template that can be used as a starting point for Documentation of your project.
+
+This is a simple Jekyll template that makes it easy to use Jekyll on
+Github pages as a documentation platform resembling wiki but with more
+control.
+
+  * Uses Github's online editor to edit pages
+  * Uses Github's revision control for the pages
+  * Let's users to fork, do changes and make pull requests
+  * You can use Github's settings to easily determine who has admin access
+
+You can use everything a normal !(Jekyll)[http://jekyllrb.com/docs/home] project can.
 
 ## Adding content
-To add a new page you simply click on Add from wherever you might be. All pages can be 
-found inside the folder `_posts`.
-
-As you might notice all content is markdown syntax. Also allowed is `liquid syntax` in 
-case you want to access [Jekyll's variables]().
-
-Also you can use `liquid syntax` to highlight code.
-For example:
-{% highlight python %}
-def test(name):
-  print('test')
-{% endhighlight %}
+All pages have an `Add` button. Clicking that you will be able to add a new
+page to the current structure. If you don't have permissions to do so then
+the project can be forked and once you added the content you can make a pull
+request.
 
 ## Editing
-Pressing on `edit` (on the right upper corner) will simply take you to Github's editor 
-for the specific page where you are now.
+Pressing on `Edit` on a page will simply take you to Github's editor 
+for the specific page where you are now. As with `Add`, if you don't
+have permissions to do so (you are not an admin of the project), 
 
 ## Adding collaborators
 Editing pages is the same as editing source code of a project on Github. For that reason

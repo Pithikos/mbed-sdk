@@ -3,9 +3,21 @@ title: Documentation
 email: manossef@gmail.com
 description: >
   Documentation for the Mbed SDK
-baseurl:  "mbed-sdk"
-project-name:  "Mbed SDK"
+baseurl:  ""
+
+project-name:  "Mbed SDK"         # The name of the project as shown on pages
+github_project-name:  "mbed-sdk"
 github_username:  Pithikos
 
 # Build settings
 markdown: kramdown
+permalink: /:title
+
+# Default front matter for all posts
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "post"
+      title: "test test"

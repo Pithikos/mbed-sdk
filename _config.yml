@@ -3,7 +3,7 @@ title: "Mbed SDK"
 github_project-name:  "mbed-sdk"
 github_username:  Pithikos
 email: manossef@gmail.com
-baseurl: ""
+baseurl: "http://pithikos.github.io"
 
 # Build settings
 markdown: kramdown

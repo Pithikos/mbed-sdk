@@ -1,56 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation</title>
-    <description>Documentation for the Mbed SDK
-</description>
+    <title>Mbed SDK</title>
+    <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Dec 2014 18:26:03 +0000</pubDate>
-    <lastBuildDate>Fri, 19 Dec 2014 18:26:03 +0000</lastBuildDate>
+    <pubDate>Tue, 06 Jan 2015 15:07:35 +0000</pubDate>
+    <lastBuildDate>Tue, 06 Jan 2015 15:07:35 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
-        <title>test</title>
-        <description>&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+        <title>Test</title>
+        <description>&lt;h1 id=&quot;this-is-a-test&quot;&gt;This is a test&lt;/h1&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is a simple Jekyll template that makes it easy to use Jekyll on
+Github pages as a documentation platform resembling wiki but with more
+control.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Uses Github’s online editor to edit and add pages&lt;/li&gt;
+  &lt;li&gt;Uses Github’s revision control for the pages&lt;/li&gt;
+  &lt;li&gt;Let’s users to fork, do changes and make pull requests&lt;/li&gt;
+  &lt;li&gt;You can use Github’s settings to easily administer access&lt;/li&gt;
+&lt;/ul&gt;
 
-</description>
-        <pubDate>Thu, 18 Dec 2014 17:10:14 +0000</pubDate>
-        <link>/jekyll/update/2014/12/18/Installation.html</link>
-        <guid isPermaLink="true">/jekyll/update/2014/12/18/Installation.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>How to use</title>
-        <description>&lt;p&gt;This is a simple Jekyll template that can be used as a starting point for Documentation of your project.&lt;/p&gt;
+&lt;p&gt;You can use everything a normal &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll&lt;/a&gt; project can.&lt;/p&gt;
 
-&lt;h2 id=&quot;adding-content&quot;&gt;Adding content&lt;/h2&gt;
-&lt;p&gt;To add a new page you simply click on Add from wherever you might be. All pages can be 
-found inside the folder &lt;code&gt;_posts&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
 
-&lt;p&gt;As you might notice all content is markdown syntax. Also allowed is &lt;code&gt;liquid syntax&lt;/code&gt; in 
-case you want to access &lt;a href=&quot;&quot;&gt;Jekyll’s variables&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Also you can use &lt;code&gt;liquid syntax&lt;/code&gt; to highlight code.
-For example:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;editing&quot;&gt;Editing&lt;/h2&gt;
-&lt;p&gt;Pressing on &lt;code&gt;edit&lt;/code&gt; (on the right upper corner) will simply take you to Github’s editor 
-for the specific page where you are now.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Make a github web page&lt;/li&gt;
+  &lt;li&gt;Click here.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;adding-collaborators&quot;&gt;Adding collaborators&lt;/h2&gt;
 &lt;p&gt;Editing pages is the same as editing source code of a project on Github. For that reason
@@ -60,14 +41,49 @@ user forks the project, then he can pull a request to merge.&lt;/p&gt;
 &lt;p&gt;If you want specific users to be able and freely edit content without this process,
 then you simply have to add these users as collaborators to the project.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 18 Dec 2014 17:10:14 +0000</pubDate>
-        <link>/jekyll/update/2014/12/18/How_to_use.html</link>
-        <guid isPermaLink="true">/jekyll/update/2014/12/18/How_to_use.html</guid>
+        <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+        <link>/Test</link>
+        <guid isPermaLink="true">/Test</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>How_to_use</title>
+        <description>&lt;h1 id=&quot;how-to-use-updated&quot;&gt;How to use (updated)&lt;/h1&gt;
+
+&lt;p&gt;You only need to configure your &lt;code&gt;_config.yml&lt;/code&gt; file so it reflects your
+project.&lt;/p&gt;
+
+&lt;p&gt;The below fields have to be correct for this template to work:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;github_project-name&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;github_username&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
+&lt;p&gt;All content is saved in _posts. The content there can be organized with
+folders. Markdown files that are in the same folder are treated as belonging
+to the same documentation snippet and accordingly the navigation panel
+will be populated.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-collaborators&quot;&gt;Adding collaborators&lt;/h2&gt;
+&lt;p&gt;Editing pages is the same as editing source code of a project on Github. For that reason
+whenever a random user clicks on Edit, a message to fork the project will be given. If the
+user forks the project, then he can pull a request to merge.&lt;/p&gt;
+
+&lt;p&gt;If you want specific users to be able and freely edit content without this process,
+then you simply have to add these users as collaborators to the project.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h2&gt;
+&lt;p&gt;You can start by going to the root and start adding content. You can safely
+delete this file.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+        <link>/How_to_use</link>
+        <guid isPermaLink="true">/How_to_use</guid>
         
-        <category>update</category>
         
       </item>
     

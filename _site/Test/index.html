@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>temptitle</title>
-  <meta name="description" content="">
+  <title>Test</title>
+  <meta name="description" content="This is a test">
 
   <link rel="stylesheet" href="/css/main.css">
   <script src="/js/common.js"></script>
   
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/Test">
   <link rel="alternate" type="application/atom+xml" title="Mbed SDK" href="/feed.xml" />
 </head>
 
@@ -60,7 +60,7 @@
 		onclick="window.location.href = replace_date_with_today(this.href); return false;">Add</a>
 
       <!-- Edit page -->
-      <a href="https://github.com/Pithikos/mbed-sdk/edit/gh-pages/index.html">Edit</a>
+      <a href="https://github.com/Pithikos/mbed-sdk/edit/gh-pages/_posts/2014-12-18-Test.markdown">Edit</a>
 
 
     </nav>
@@ -72,37 +72,93 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-<ul class="post-list">
+  <header class="post-header">
+    <!-- <h1 class="post-title">Test</h1> -->
+    <h1 class="post-title"></h1>
+    <p class="post-meta"></p>
     
-      <li>
-        <h2>
-          <a class="post-link" href="/Test">Test</a>
-        </h2>
-      </li>
+    <script>
+
+
+	query("https://api.github.com/repos/Pithikos/mbed-sdk/commits?path=_posts/2014-12-18-Test.markdown", "insert_last_update");
+
+	function insert_last_update(payload){
+		var dates = [];
+		for (var i in payload['data']) {
+		    dates.push(new Date(payload['data'][i]['commit']['author']['date']));
+		}
+		if (dates.length < 1) return
+		date = new Date(Math.max.apply(null, dates));
+		var els = document.getElementsByClassName('post-meta');
+		for (var i = 0; i < els.length; i++) {
+			els[i].innerHTML = "Last update: " + friendly_date(date);
+		}
+	}
+	
+	
+	query("https://api.github.com/repos/Pithikos/mbed-sdk/contents/_posts/2014-12-18-Test.markdown", "insert_title");
+	
+	function insert_title(payload){
+		var title = "< title not set >";
+		var content = "";
+		if (payload['data']['encoding'] == 'base64') {
+			content = atob(payload['data']['content']);
+		}
+		
+		var lines = content.split('\n');
+		var re = new RegExp(/^#[^#].*/);
+		for (var i = 0; i < lines.length; i++) {
+			if (lines[i].search(re) >= 0) {
+				title = lines[i].slice(1).trim();
+				break;
+			}
+		}
+		
+		var els = document.getElementsByClassName('post-title');
+		for (var i = 0; i < els.length; i++) {
+			els[i].innerHTML = title;
+		}
+	}
+
+    </script>
     
-      <li>
-        <h2>
-          <a class="post-link" href="/How_to_use">How_to_use</a>
-        </h2>
-      </li>
-    
-  </ul>
-  
-  
-  <h3>
-  feed.xml
-  </h3>
-  
-  <h3>
-  index.html
-  </h3>
-  
-  <h3>
-  css/main.scss
-  </h3>
-  
+    <!-- DOESN'T WORK ON <p class="post-meta">Last update: Jan 5, 2015</p> -->
+  </header>
+
+  <article class="post-content">
+    <h1 id="this-is-a-test">This is a test</h1>
+
+<p>This is a simple Jekyll template that makes it easy to use Jekyll on
+Github pages as a documentation platform resembling wiki but with more
+control.</p>
+
+<ul>
+  <li>Uses Github’s online editor to edit and add pages</li>
+  <li>Uses Github’s revision control for the pages</li>
+  <li>Let’s users to fork, do changes and make pull requests</li>
+  <li>You can use Github’s settings to easily administer access</li>
+</ul>
+
+<p>You can use everything a normal <a href="http://jekyllrb.com/docs/home">Jekyll</a> project can.</p>
+
+<h2 id="install">Install</h2>
+
+<ol>
+  <li>Make a github web page</li>
+  <li>Click here.</li>
+</ol>
+
+<h2 id="adding-collaborators">Adding collaborators</h2>
+<p>Editing pages is the same as editing source code of a project on Github. For that reason
+whenever a random user clicks on Edit, a message to fork the project will be given. If the
+user forks the project, then he can pull a request to merge.</p>
+
+<p>If you want specific users to be able and freely edit content without this process,
+then you simply have to add these users as collaborators to the project.</p>
+
+  </article>
 
 </div>
 

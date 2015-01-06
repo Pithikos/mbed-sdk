@@ -35,8 +35,9 @@
 
       <!-- Add a new page -->
       <a
-      href="https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts?filename={{ site.time | date: '%Y-%m-%d' }}-"
-      onclick="window.location.href = replace_date_with_today(this.href); return false;">Add</a>
+		href="https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/new/gh-pages/_posts?filename={{ site.time | date: '%Y-%m-%d' }}-{{ site.filenames.new_file }}"
+		onclick="window.location.href = replace_date_with_today(this.href); return false;">Add</a>
+
       <!-- Edit page -->
       <a href="https://github.com/{{ site.github_username }}/{{ site.github_project-name }}/edit/gh-pages/{{ page.path }}">Edit</a>
 

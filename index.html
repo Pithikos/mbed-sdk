@@ -13,5 +13,11 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  
+  {% for p in site.pages %}
+  <h3>
+  {{ p.path }}
+  </h3>
+  {% endfor %}
 
 </div>

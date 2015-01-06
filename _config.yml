@@ -1,13 +1,9 @@
 # Site settings
-title: Documentation
-email: manossef@gmail.com
-description: >
-  Documentation for the Mbed SDK
-baseurl:  "./"
-
-project-name:  "Mbed SDK"         # The name of the project as shown on pages
+title: "Mbed SDK"
 github_project-name:  "mbed-sdk"
 github_username:  Pithikos
+email: manossef@gmail.com
+baseurl: ""
 
 # Build settings
 markdown: kramdown
@@ -20,4 +16,8 @@ defaults:
       path: "" # empty string for all files
     values:
       layout: "post"
-      title: "test test"
+      title: "no-title"
+
+# Custom configuration
+filenames:
+  new_file: "tempname"

@@ -1,6 +1,5 @@
 # How to use
 
-
 You only need to configure your `_config.yml` file so it reflects your
 project.
 
@@ -27,5 +26,5 @@ then you simply have to add these users as collaborators to the project.
 
 
 ## What's next?
-You can start by going to the [root]({{  }}) and start adding content. You can safely
+You can start by going to the root and start adding content. You can safely
 delete this file.

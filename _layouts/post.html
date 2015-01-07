@@ -5,11 +5,10 @@ layout: default
 
   <header class="post-header">
     <!-- <h1 class="post-title">{{ page.title }}</h1> -->
-    <h1 class="post-title"></h1>
-    <p class="post-meta"></p>
+    <!-- <h1 class="post-title"></h1> -->
+    <!-- <p class="post-meta"></p>-->
     
     <script>
-
 
 	query("https://api.github.com/repos/{{ site.github_username }}/{{ site.github_project-name }}/commits?path={{ page.path }}", "insert_last_update");
 
@@ -20,37 +19,16 @@ layout: default
 		}
 		if (dates.length < 1) return
 		date = new Date(Math.max.apply(null, dates));
-		var els = document.getElementsByClassName('post-meta');
-		for (var i = 0; i < els.length; i++) {
-			els[i].innerHTML = "Last update: " + friendly_date(date);
-		}
-	}
-	
-	
-	query("https://api.github.com/repos/{{ site.github_username }}/{{ site.github_project-name }}/contents/{{ page.path }}", "insert_title");
-	
-	function insert_title(payload){
-		var title = "< title not set >";
-		var content = "";
-		if (payload['data']['encoding'] == 'base64') {
-			content = atob(payload['data']['content']);
-		}
 		
-		var lines = content.split('\n');
-		var re = new RegExp(/^#[^#].*/);
-		for (var i = 0; i < lines.length; i++) {
-			if (lines[i].search(re) >= 0) {
-				title = lines[i].slice(1).trim();
-				break;
-			}
-		}
-		
-		var els = document.getElementsByClassName('post-title');
-		for (var i = 0; i < els.length; i++) {
-			els[i].innerHTML = title;
-		}
-	}
+		var text  = "Last update: " + friendly_date(date);
+		var newel = new_node('p', text, "post-meta");
 
+		var els = document.getElementsByTagName('h1');
+		for (var i = 0; i < els.length; i++) {
+			insert_after(els[i], newel);
+		}
+	}
+	
     </script>
 
   </header>

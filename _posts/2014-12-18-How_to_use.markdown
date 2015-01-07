@@ -1,4 +1,4 @@
-# How to use (updated)
+# How to use (updated2)
 
 You only need to configure your `_config.yml` file so it reflects your
 project.

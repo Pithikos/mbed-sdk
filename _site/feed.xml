@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jan 2015 15:39:42 +0000</pubDate>
-    <lastBuildDate>Tue, 06 Jan 2015 15:39:42 +0000</lastBuildDate>
+    <pubDate>Wed, 07 Jan 2015 09:20:48 +0000</pubDate>
+    <lastBuildDate>Wed, 07 Jan 2015 09:20:48 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -50,7 +50,7 @@ then you simply have to add these users as collaborators to the project.&lt;/p&g
     
       <item>
         <title>How_to_use</title>
-        <description>&lt;h1 id=&quot;how-to-use-updated&quot;&gt;How to use (updated)&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;how-to-use-updated2&quot;&gt;How to use (updated2)&lt;/h1&gt;
 
 &lt;p&gt;You only need to configure your &lt;code&gt;_config.yml&lt;/code&gt; file so it reflects your
 project.&lt;/p&gt;

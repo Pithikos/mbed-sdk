@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
 
   <title>How_to_use</title>
-  <meta name="description" content="How to use (updated)">
+  <meta name="description" content="How to use (updated2)">
 
   <link rel="stylesheet" href="/css/main.css">
   <script src="/js/common.js"></script>
@@ -56,7 +56,7 @@
 
       <!-- Add a new page -->
       <a
-		href="https://github.com/Pithikos/mbed-sdk/new/gh-pages/_posts?filename=2015-01-06-tempname.markdown"
+		href="https://github.com/Pithikos/mbed-sdk/new/gh-pages/_posts?filename=2015-01-07-tempname.markdown"
 		onclick="window.location.href = replace_date_with_today(this.href); return false;">Add</a>
 
       <!-- Edit page -->
@@ -76,11 +76,10 @@
 
   <header class="post-header">
     <!-- <h1 class="post-title">How_to_use</h1> -->
-    <h1 class="post-title"></h1>
-    <p class="post-meta"></p>
+    <!-- <h1 class="post-title"></h1> -->
+    <!-- <p class="post-meta"></p>-->
     
     <script>
-
 
 	query("https://api.github.com/repos/Pithikos/mbed-sdk/commits?path=_posts/2014-12-18-How_to_use.markdown", "insert_last_update");
 
@@ -91,37 +90,16 @@
 		}
 		if (dates.length < 1) return
 		date = new Date(Math.max.apply(null, dates));
-		var els = document.getElementsByClassName('post-meta');
-		for (var i = 0; i < els.length; i++) {
-			els[i].innerHTML = "Last update: " + friendly_date(date);
-		}
-	}
-	
-	
-	query("https://api.github.com/repos/Pithikos/mbed-sdk/contents/_posts/2014-12-18-How_to_use.markdown", "insert_title");
-	
-	function insert_title(payload){
-		var title = "< title not set >";
-		var content = "";
-		if (payload['data']['encoding'] == 'base64') {
-			content = atob(payload['data']['content']);
-		}
 		
-		var lines = content.split('\n');
-		var re = new RegExp(/^#[^#].*/);
-		for (var i = 0; i < lines.length; i++) {
-			if (lines[i].search(re) >= 0) {
-				title = lines[i].slice(1).trim();
-				break;
-			}
-		}
-		
-		var els = document.getElementsByClassName('post-title');
-		for (var i = 0; i < els.length; i++) {
-			els[i].innerHTML = title;
-		}
-	}
+		var text  = "Last update: " + friendly_date(date);
+		var newel = new_node('p', text, "post-meta");
 
+		var els = document.getElementsByTagName('h1');
+		for (var i = 0; i < els.length; i++) {
+			insert_after(els[i], newel);
+		}
+	}
+	
     </script>
 
   </header>
@@ -129,7 +107,7 @@
 
 
   <article class="post-content">
-    <h1 id="how-to-use-updated">How to use (updated)</h1>
+    <h1 id="how-to-use-updated2">How to use (updated2)</h1>
 
 <p>You only need to configure your <code>_config.yml</code> file so it reflects your
 project.</p>
